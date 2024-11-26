@@ -88,6 +88,7 @@ fi
 
 $cmd $flags | awk -v count=0 '
   /kmod-qca|^nss/ {
+
   if(count>0) tab="            "
   print tab $0
   count++
